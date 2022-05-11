@@ -1,9 +1,18 @@
 import "./styles.css";
+let btnEnv = document.getElementById("enviar");
+let usuario: number = document.getElementById("usu");
+let password: number = document.getElementById("pass");
+let usua: string = "Juan";
+let claveu: string = "claveJuan";
 
-document.getElementById("app").innerHTML = `
-<h1>Hello Vanilla!</h1>
-<div>
-  We use the same configuration as Parcel to bundle this sandbox, you can find more
-  info about Parcel 
-  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
-</div>`;
+btnEnv.addEventListener("click", () => {
+  let usuariof: string = usuario.value;
+  let password1: string = password.value;
+  if (usuariof === usua && password1 === claveu) {
+    console.log("Bienvenido");
+  } else {
+    console.log("El usuario o la clave son incorrectos");
+  }
+
+  //}
+});
